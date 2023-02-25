@@ -4,133 +4,188 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Recommendations</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-	<h1>Recommendations</h1>
-	<h2>What can we do?</h2>
-
+	<!-- navigation bar -->
 	<nav>
 		<a href="index.html">Home</a>
 		<a href="stats.html">Stats</a>
 		<a href="#">Recommendations</a>
 	</nav>
 
-	<h1>Food Changes</h1>
-	<ul>
-		<li>Eat at least 1 vegeterian meal a week</li>
-		<ul>
-			<li><a href="https://themodernproper.com/60-best-vegetarian-meals" target="_blank">60 Best Vegeterian Meals</a></li>
-			<li><a href="https://www.feastingathome.com/15-cozy-fall-dinners-vegetarian/" target="_blank">50 Best Vegeterian Recipes</a></li>
-			<li><a href="https://www.aheadofthyme.com/60-easy-vegetarian-dinner-recipes/" target="_blank">60 Vegeterian Dinner Recipes</a></li>
-		</ul>
-		<li>Switch to less carbon intensive meats</li>
-		<ul>
-			<li>Chicken</li>
-			<li>Turkey</li>
-		</ul>
-		<li>Eliminate the transport of food</li>
-		<ul>
-			<li>Food delivery services produce greenhouse gas emissions</li>
-		</ul>
-	</ul>
-	<img src="images/veggies.jpg">
+	<!-- recommendations landing -->
+	<div class="landing rec-landing">
+		<h1>Recommendations</h1>
+		<h2>What can we do?</h2>
+	</div>
 
-	<h1>Waste Changes</h1>
-	<ul>
-		<li>Shop green</li>
-		<ul>
-			<li>Consider a product's durability, sustainability, and ease of recycling</li>
-			<li>Buy products with recycled content</li>
-			<li>Buy used items</li>
-		</ul>
-		<li>Reduce food waste</li>
-		<ul>
-			<li>Buy what you need</li>
-			<li>Compost scraps</li>
-			<li>Donate unused food</li>
-		</ul>
-		<li>Reuse and repurpose</li>
-		<ul>
-			<li>Old clothing</li>
-			<li>Grocery bags</li>
-			<li>Containers</li>
-		</ul>
-	</ul>
-	<img src="images/recycling-symbol.png">
+	<!-- 1st recommendation -->
+	<!-- https://css.umich.edu/publications/factsheets/sustainability-indicators/carbon-footprint-factsheet -->
+	<div class="green-section">
+		<h1>Food Changes</h1>
+		<div class="section-content subsections ">
+			<div class="subsection text">
+				<ul>
+					<li class="highlight">Eat at least 1 vegeterian meal a week</li>
+					<ul class="add-space">
+						<li><a href="https://themodernproper.com/60-best-vegetarian-meals" target="_blank">60 Best Vegeterian Meals</a></li>
+						<li><a href="https://www.feastingathome.com/15-cozy-fall-dinners-vegetarian/" target="_blank">50 Best Vegeterian Recipes</a></li>
+						<li><a href="https://www.aheadofthyme.com/60-easy-vegetarian-dinner-recipes/" target="_blank">60 Vegeterian Dinner Recipes</a></li>
+					</ul>
+					<li class="highlight">Switch to less carbon intensive meats</li>
+					<ul class="add-space">
+						<li>Chicken</li>
+						<li>Turkey</li>
+					</ul>
+					<li class="highlight">Eliminate the transport of food</li>
+					<ul>
+						<li>Food delivery services produce greenhouse gas emissions</li>
+					</ul>
+				</ul>
+			</div>
+			<div class="subsection one-image"><img src="images/veggies.jpg"></div>
+		</div>
+	</div>
 
-	<h1>Transportation Changes</h1>
-	<ul>
-		<li>Use green modes of transportation</li>
-		<ul>
-			<li>Walking</li>
-			<li>Biking</li>
-			<li>Carpooling</li>
-			<li>Public transportation</li>
-		</ul>
-		<li>Drive smart</li>
-		<ul>
-			<li>Go easy on the breaks and gas</li>
-			<li>Use cruise control</li>
-			<li>Keep your car well-maintained</li>
-			<li>Observe the speed limit</li>
-		</ul>
-		<li>Vehicle purchases</li>
-		<ul>
-			<li>Choose a vehicle with higher miles per gallon</li>
-			<li>Choose an electric vehicle (EV)</li>
-			<li>Choose an energy-saving EV charger</li>
-			<li>Choose a nice, used vehicle</li>
-		</ul>
-	</ul>
-	<img src="images/subway.jpg">
+	<!--2nd recommendation-->
+	<!-- https://www.epa.gov/climate-change/what-you-can-do-about-climate-change-waste -->
+	<!-- https://css.umich.edu/publications/factsheets/sustainability-indicators/carbon-footprint-factsheet -->
+	<div class="white-section">
+		<h1>Waste Changes</h1>
+		<div class="section-content subsections">
+			<div class="subsection text">
+				<ul>
+					<li class="highlight">Shop green</li>
+					<ul class="add-space">
+						<li>Consider a product's durability, sustainability, and ease of recycling</li>
+						<li>Buy products with recycled content</li>
+						<li>Buy used items</li>
+					</ul>
+					<li class="highlight">Reduce food waste</li>
+					<ul class="add-space">
+						<li>Buy what you need</li>
+						<li>Compost scraps</li>
+						<li>Donate unused food</li>
+					</ul>
+					<li class="highlight">Reuse and repurpose</li>
+					<ul>
+						<li>Old clothing</li>
+						<li>Grocery bags</li>
+						<li>Containers</li>
+					</ul>
+				</ul>
+			</div>
+			<div class="subsection one-image">
+				<img src="images/recycling-symbol.png">
+			</div>
+		</div>
+	</div>
 
-	<h1>Water Changes</h1>
-	<ul>
-		<li>Use water efficiently</li>
-		<ul>
-			<li>Turn off running faucets</li>
-			<li>Run your washer with a full load using cold water</li>
-		</ul>
-		<li>Check for water leaks and have them fixed</li>
-		<ul>
-			<li>Toilet</li>
-			<li>Faucets</li>
-			<li>Pipes</li>
-		</ul>
-		<li>Shower changes</li>
-		<ul>
-			<li>Install low-flow showerheads</li>
-			<li>Take shorter showers</li>
-		</ul>
-	</ul>
-	<img src="images/water-faucet.jpg">
+	<!-- 3rd recommendation -->
+	<!-- https://www.epa.gov/climate-change/what-you-can-do-about-climate-change-transportation -->
+	<div class="green-section">
+		<h1>Transportation Changes</h1>
+		<div class="section-content subsections">
+			<div class="subsection text">
+				<ul>
+					<li class="highlight">Use green modes of transportation</li>
+					<ul class="add-space">
+						<li>Walking</li>
+						<li>Biking</li>
+						<li>Carpooling</li>
+						<li>Public transportation</li>
+					</ul>
+					<li class="highlight">Drive smart</li>
+					<ul class="add-space">
+						<li>Go easy on the breaks and gas</li>
+						<li>Use cruise control</li>
+						<li>Keep your car well-maintained</li>
+						<li>Observe the speed limit</li>
+					</ul>
+					<li class="highlight">Vehicle purchases</li>
+					<ul>
+						<li>Choose a vehicle with higher miles per gallon</li>
+						<li>Choose an electric vehicle (EV)</li>
+						<li>Choose an energy-saving EV charger</li>
+						<li>Choose a nice, used vehicle</li>
+					</ul>
+				</ul>
+			</div>
+			<div class="subsection one-image">
+				<img src="images/subway.jpg">
+			</div>
+		</div>
+	</div>
+	
+	<!--4th recommendation-->
+	<!-- https://www.epa.gov/climate-change/what-you-can-do-about-climate-change-water -->
+	<div class="white-section">
+		<h1>Water Changes</h1>
+		<div class="section-content subsections">
+			<div class="subsection text">
+				<ul>
+					<li class="highlight">Use water efficiently</li>
+					<ul  class="add-space">
+						<li>Turn off running faucets</li>
+						<li>Run your washer with a full load using cold water</li>
+					</ul>
+					<li class="highlight">Check for water leaks and have them fixed</li>
+					<ul class="add-space">
+						<li>Toilet</li>
+						<li>Faucets</li>
+						<li>Pipes</li>
+					</ul>
+					<li class="highlight">Shower changes</li>
+					<ul>
+						<li>Install low-flow showerheads</li>
+						<li>Take shorter showers</li>
+					</ul>
+				</ul>
+			</div>
+			<div class="subsection one-image">
+				<img src="images/water-faucet.jpg">
+			</div>
+		</div>
+	</div>
 
-	<h1>Advocacy</h1>
-	<ul>
-		<li>Explore/Join these groups to make a difference</li>
-		<ul>
-			<li><a href="https://350.org/" target="_blank">350</a></li>
-			<li><a href="https://climatejusticealliance.org/" target="_blank">Climate Justice Alliance</a></li>
-			<li><a href="https://www.culturalsurvival.org/" target="_blank">Cultural Survival</a></li>
-			<li><a href="https://earthjustice.org/" target="_blank">EarthJustice</a></li>
-			<li><a href="https://www.edf.org/" target="_blank">Environmental Defense Fund</a></li>
-			<li><a href="https://www.epa.gov/" target="_blank">Environmental Protection Agency (U.S.)</a></li>
-			<li><a href="ttps://www.greengrants.org/" target="_blank">Global Greengrants Fund</a></li>
-			<li><a href="https://www.thedreamcorps.org/our-programs/green-for-all/" target="_blank">Green for All</a></li>
-			<li><a href="https://www.greenpeace.org/usa/issues/environmental-justice/" target="_blank">Greenpeace Environmental Justice Campaign</a></li>
-			<li><a href="https://movementgeneration.org/" target="_blank">Movement Generation Justice & Ecology Project</a></li>
-			<li><a href="https://www.noaa.gov/" target="_blank">National Oceanic and Atmospheric Administration</a></li>
-			<li><a href="https://www.oecd.org/" target="_blank">Organisation for Economic Co-operation and Development (OECD)</a></li>
-			<li><a href="https://www.rff.org/" target="_blank">Resources for the Future</a></li>
-			<li><a href="https://www.sunrisemovement.org/" target="_blank">The Sunrise Movement</a></li>
-			<li><a href="https://tdrfund.us/" target="_blank">Trans Disaster Relief Fund</a></li>
-			<li><a href="https://www.ucsusa.org/climate" target="_blank">Union of Unconcerned Scientists</a></li>
-			<li>And more!</li>
-		</ul>
-	</ul>
-	<img src="images/climate-justice.jpg">
-
+	<!-- 5th recommendation -->
+	<!-- https://libguides.bentley.edu/ClimateJustice/Organizations -->
+	<div class="green-section">
+		<h1>Advocacy</h1>
+		<div class="section-content subsections">
+			<div class="subsection text">
+				<ul>
+					<li class="highlight">Explore/Join these groups to make a difference</li>
+					<ul>
+						<li><a href="https://350.org/" target="_blank">350</a></li>
+						<li><a href="https://climatejusticealliance.org/" target="_blank">Climate Justice Alliance</a></li>
+						<li><a href="https://www.culturalsurvival.org/" target="_blank">Cultural Survival</a></li>
+						<li><a href="https://earthjustice.org/" target="_blank">EarthJustice</a></li>
+						<li><a href="https://www.edf.org/" target="_blank">Environmental Defense Fund</a></li>
+						<li><a href="https://www.epa.gov/" target="_blank">Environmental Protection Agency (U.S.)</a></li>
+						<li><a href="ttps://www.greengrants.org/" target="_blank">Global Greengrants Fund</a></li>
+						<li><a href="https://www.thedreamcorps.org/our-programs/green-for-all/" target="_blank">Green for All</a></li>
+						<li><a href="https://www.greenpeace.org/usa/issues/environmental-justice/" target="_blank">Greenpeace Environmental Justice Campaign</a></li>
+						<li><a href="https://movementgeneration.org/" target="_blank">Movement Generation Justice & Ecology Project</a></li>
+						<li><a href="https://www.noaa.gov/" target="_blank">National Oceanic and Atmospheric Administration</a></li>
+						<li><a href="https://www.oecd.org/" target="_blank">Organisation for Economic Co-operation and Development (OECD)</a></li>
+						<li><a href="https://www.rff.org/" target="_blank">Resources for the Future</a></li>
+						<li><a href="https://www.sunrisemovement.org/" target="_blank">The Sunrise Movement</a></li>
+						<li><a href="https://tdrfund.us/" target="_blank">Trans Disaster Relief Fund</a></li>
+						<li><a href="https://www.ucsusa.org/climate" target="_blank">Union of Unconcerned Scientists</a></li>
+						<li>And more!</li>
+					</ul>
+				</ul>
+			</div>
+			<div class="subsection one-image">
+				<img src="images/climate-justice.jpg">
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
 	<footer>
 		<a href="index.html">Climate Change</a> - a revised Issue Site by Elizabeth Vazquez
 	</footer>

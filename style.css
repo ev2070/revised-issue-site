@@ -1,0 +1,394 @@
+/*h1 elements use Squada One font*/
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+/*all other elements use Urbanist font*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+/*Prevent the browser from auto positioning 
+  both elements and have them take up the 
+  full page height*/
+body, html {
+	height: 100vh;
+	margin: 0;
+}
+
+/*have all h1 without a top margin*/
+h1 {
+	margin-top: 0;
+}
+
+/*Give each page's landing a darkened image*/
+.home-landing {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), 
+				rgba(0, 0, 0, 0.5)), url("images/earth-bg.jpg");
+}
+
+.stats-landing {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), 
+				rgba(0, 0, 0, 0.5)), url("images/nasa-temps.jpg");
+}
+
+.rec-landing {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), 
+				rgba(0, 0, 0, 0.5)), url("images/planetary-health.png");
+}
+
+/*Have each landing have a large image that 
+  fills up the page. Also have each one contain
+  the page name and leading question in a white, 
+  bold font that will be centered vertically and 
+  justified to the left*/
+.landing {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	height: 100vh;
+	padding-left: 3.8vw;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+
+	color: white;
+	font-family: 'Squada One', cursive;
+}
+
+/*Give landing text appropriate font sizes
+  and remove margins for them to appear more 
+  vertically centered*/
+.landing h1 {
+	font-size: 27vmin;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.landing h2 {
+	font-size: 6.5vmin;
+	margin-bottom: 0;
+}
+
+/*Have the navigation bar be fixed near the 
+  top-right corner of the page. Tabs will be 
+  evenly spaced out in the navbar which is 
+  of a dark blue background. If the navbar 
+  becomes too narrow, the tabs will wrap 
+  around*/
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin-top: 3vmin;
+	margin-right: 3vmin;
+
+	width: 32vw;
+	height: 8vh;
+
+	background-color: #0B3737;
+	border-radius: 2vmin;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/*These tabs will be in white with some 
+  padding on their left and right*/
+nav a {
+	color: white;
+	font-family: Urbanist;
+	font-size: 3.4vmin;
+	text-decoration: none;
+
+	padding-left: 0.75vw;
+	padding-right: 0.75vw;
+}
+
+/*When hovering over a tab, a lighter shade
+  of blue will indicate that*/
+nav a:hover {
+	background-color: #00A398;
+	border-radius: 1vmin;
+}
+
+/*A green section will take up the page's 
+  entire width with some padding on the 
+  top and bottom*/
+.green-section {
+	background-color: #688D04;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+/*h1 in green sections will be white with 
+  Squada One font, large, and centered*/
+.green-section h1 {
+	color: white;
+	font-family: Squada One;
+	font-size: 13vmin;
+	text-align: center;
+}
+
+/*the quote will be dark green with Urbanist
+  font, fairly large, centered, with no 
+  top margin*/
+#quote {
+	color: #072A04;
+	font-family: Urbanist;
+	font-size: 10vmin;
+	text-align: center;
+	margin-top: 0;
+}
+
+/*paragraphs in green sections will be dark 
+  green with Urbanist font and small*/
+.green-section p {
+	color: #072A04;
+	font-family: Urbanist;
+	font-size: 3.4vmin;
+}
+
+/*paragraphs in white sections will be dark 
+  gray with Urbanist font and small*/
+.white-section p {
+	color: #5D737E;
+	font-family: Urbanist;
+	font-size: 3.4vmin;
+}
+
+/*centered paragraphs*/
+.centered-p {
+	text-align: center;
+}
+
+/*highlight color will be a light green*/
+.highlight {
+	color: #D7DA1B;
+}
+
+/*white sections will have some padding 
+  on the top and bottom*/
+.white-section {
+	background-color: white;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+/*h1 in white sections will be dark green 
+  with Squada One font, large, and centered*/
+.white-section h1 {
+	color: #072A04;
+	font-family: Squada One;
+	font-size: 13vmin;
+	text-align: center;
+}
+
+/*list items in white sections will be gray 
+ with Urbanist font and small*/
+.white-section li {
+	color: #5D737E;
+	font-family: Urbanist;
+	font-size: 3.4vmin;
+}
+
+/*list items in green sections will be dark
+  green with Urbanist font and small*/
+.green-section li {
+	color: #072A04;
+	font-family: Urbanist;
+	font-size: 3.4vmin;
+}
+
+/*some list items will be highlighted in a 
+  light green, be bigger in size than other
+  list items, bold and contain a bit more 
+  margin below them*/
+li.highlight {
+	color: #D7DA1B;
+	font-size: 5.5vmin;
+	font-weight: bold;
+	margin-bottom: 2vh;
+}
+
+/*some elements will have more bottom margin*/
+.add-space {
+	margin-bottom: 4vh;
+}
+
+/*the highlighted list items will have their
+  bullet points as the ⴲ symbol and also 
+  be a light green*/
+li.highlight::marker {
+	color: #D7DA1B;
+	content: "ⴲ ";
+}
+
+/*content in a section will take up 80% of 
+  the section and be centered relative to 
+  the section*/
+.section-content {
+/*	background-color: blue;*/
+	width: 80%;
+	margin: auto;
+}
+
+/*subsections will be flex boxes that justify
+  their content to the center and vertically 
+  center their content with gaps between them*/
+.subsections {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 3vmin;
+}
+
+/*a subsection will take up half the width of 
+  subsections*/
+.subsection {
+	width: 49%;
+}
+
+/*four-images will be a flex box with content 
+  horizontally & vertically centered and they 
+  will wrap if needed with some gap in between*/
+.four-images {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	gap: 1vmin;
+}
+
+/*the images in four-images will take up half
+  the width of the four-images div*/
+.four-images img {
+	width: 49%;
+}
+
+/*the footer will have a dark blue background,
+  white Urbanist font will small size, 
+  centered text and some padding on the top 
+  and bottom*/
+footer {
+	background-color: #0B3737;
+
+	color: white;
+	font-family: Urbanist;
+	font-size: 3.4vmin;
+
+	text-align: center;
+
+	padding-top: 13vmin;
+	padding-bottom: 13vmin;
+}
+
+/*the link in the footer will be a light green
+  color and have no underline*/
+footer a {
+	color: #D7DA1B;
+	text-decoration: none;
+}
+
+/*h2 in green sections will be a dark green 
+  color with Urbanist font and fairly large*/
+.green-section h2 {
+	color: #072A04;
+	font-family: Urbanist;
+	font-size: 5vmin;
+}
+
+/*h2 in white sections will be white with 
+  Urbanist font and fairly large*/
+.white-section h2 {
+	color: #5D737E;
+	font-family: Urbanist;
+	font-size: 5vmin;
+}
+
+/*row-of-three will be flex boxes containing
+  three items that will be evenly spaced with
+  some extra gap for readability*/
+.row-of-three {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	gap: 1vmin;	
+}
+
+/*h1, h2, paragraphs, and images in rows of 
+  three will take up a third of the div and
+  be centered*/
+.row-of-three h2, .row-of-three h1, 
+.row-of-three p, .row-of-three img {
+	width: 32%;
+	text-align: center;
+}
+
+/*h1 in rows of three will have no margin*/
+.row-of-three h1 {
+	margin: 0;
+}
+
+/*an image with a transparent background 
+  will now have a dark blue background*/
+#dark-bg {
+	background-color: #131116;
+}
+
+/*one image will be centered horizontally
+  and vertically (with respect to its 
+  text counterpart)*/
+.one-image {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap; /*note 1 at bottom*/
+}
+
+/*an image in one-image div will take up 
+ the entire width of that div*/
+/*https://stackoverflow.com/questions/41774646/image-is-not-resizing-in-a-flexbox-layout*/
+.one-image img {
+	width: 100%;
+	height: auto;
+}
+
+/*text is a subsection and it will be 
+  horizontally and vertically centered 
+  (with respect to it image(s) counterpart)*/
+.text {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap; /*note 1 at bottom*/
+}
+
+/*all children within text will have a
+  width of 80% of the div*/
+div.text > * {
+	width: 80%;
+}
+
+/*list items with a link will appear 
+  as dark green*/
+li a {
+	color: #072A04;
+}
+
+/*list items with a link will appear
+  white when hovered over*/
+li a:hover {
+	color: white;
+}
+
+/*
+Notes to self:
+	1. I'm confused why I need this to 
+	   maintiain aspect ratio
+
+	2. I'm confused why I need this for case 
+	   where text should be vertically 
+	   centered with respect to the image
+*/
